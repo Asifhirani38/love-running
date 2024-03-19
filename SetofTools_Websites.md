@@ -1,4 +1,4 @@
-#List of tools used in this project
+# List of tools used in this project
 
 <ol>
 <li> https://www.diffchecker.com/text-compare/ - The best tools for comparing text, images, files and folders </li>
