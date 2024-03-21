@@ -89,7 +89,7 @@ main {
 
 /* Hero section id */
 #hero {
-  height: 600px;
+  height: 300px;
   width: 100%;
   background: url("../images/hero-image.webp") no-repeat center center/cover;
   position: relative;
@@ -101,8 +101,8 @@ main {
   font-size: 130%;
   position: absolute;
   bottom: 30px;
-  width: 80%;
-  min-height: 200px;
+  width: 100%;
+  min-height: 100px;
   padding-top: 40px;
   padding-left: 10px;
 }
@@ -159,6 +159,39 @@ h3 + hr {
   margin: 5px 0;
 }
 
+/* added background image to the bottom of the page under the reasons section of the website */
+#circle-cover-bg {
+  height: 90vw;
+  width: 90vw;
+  background: url("../images/reasons-image.webp") no-repeat top center/cover;
+  margin-bottom: 20px;
+  /* convert square image to circle */
+  border-radius: 50%;
+  max-width: 300px;
+  max-height: 300px;
+}
+
+/* Making sure the reasons background image aligns properly when viewed in landscape mode */
+#benefits-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Moved mental benefits section to the right in reasons section of the website */
+#benefits-physical,
+#benefits-mental {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#benefits-physical > div,
+#benefits-mental > div {
+  width: 75%;
+}
+#benefits-mental > div {
+  text-align: end;
+  align-self: flex-end;
+}
 /* Footer */
 
 #social-networks {
@@ -203,12 +236,35 @@ h3 + hr {
     /*Push main content down to accomodate larger header */
     margin-top: 79px;
   }
+
+  #benefits-physical,
+  #benefits-mental {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  #benefits-physical > div,
+  #benefits-mental > div {
+    width: 75%;
+  }
+  #benefits-mental > div {
+    text-align: end;
+    align-self: flex-end;
+  }
 }
 
 /* Large devices Laptops and Desktops */
 
 @media screen and (min-width: 992px) {
   /* target menu items when they are hovered*/
+
+  #menu a:hover {
+    border-bottom: 1px solid #3a3a3a;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* background image in reasons section for wide screen devices*/
 
   #menu a:hover {
     border-bottom: 1px solid #3a3a3a;
