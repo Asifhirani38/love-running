@@ -80,6 +80,15 @@ nav {
 .nav-toggle-label {
   font-size: 2rem;
 }
+
+/* Logo of the website that say Love Running on top left corner of the web page */
+#logo {
+  font-size: 280%;
+  line-height: 75px;
+  margin: 0 0.5rem;
+}
+
+/* Main content */
 main {
   background-color: #ffffff;
   /* Make main element take up any surplus space  to push the footer down  */
