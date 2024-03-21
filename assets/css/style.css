@@ -230,6 +230,17 @@ h3 + hr {
 #times h3 {
   color: #fafafa;
 }
+
+/* Gallery page styling */
+
+#photos img {
+  width: 100%;
+  line-height: 1em;
+}
+
+#photos {
+  line-height: 0;
+}
 /* Footer */
 
 #social-networks {
@@ -245,6 +256,17 @@ h3 + hr {
   padding: 5%;
   color: #3a3a3a;
 }
+
+/* Tile styling gallery images also called masonary style */
+
+/* Media query: large or landscape phones (576px and up) */
+@media screen and (min-width: 576px) {
+  #photos {
+    column-count: 2;
+    column-gap: 0;
+  }
+}
+
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
   /* Header */
@@ -289,6 +311,11 @@ h3 + hr {
     text-align: end;
     align-self: flex-end;
   }
+
+  /* Gallery styling */
+  #photos {
+    column-count: 3;
+  }
 }
 
 /* Large devices Laptops and Desktops */
@@ -325,5 +352,9 @@ h3 + hr {
   }
   #benefits-physical > div {
     align-self: flex-end;
+  }
+  /* Gallery styling */
+  #photos {
+    column-count: 4;
   }
 }
